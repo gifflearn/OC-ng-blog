@@ -1,0 +1,21 @@
+<div class="row"  [ngStyle]="{color: getColor()}">
+    <div class="col-lg-6">{{ postTitle }}</div>
+    <div class="col-lg-offset-3 col-lg-3">{{ postCreatedat | date: 'short' }}</div>
+</div>
+<div class="row">
+    <div class="col-lg-12">{{ postContent }}</div>
+</div>
+<div class="row">
+    <div class="col-lg-2">
+        <button 
+        class="btn btn-success" 
+        (click)="addOne()">Like it
+      </button>
+    </div>
+      <div class="col-lg-3">
+        <button 
+        class="btn btn-danger" 
+        (click)="subOne()">Don't like it
+      </button>
+    </div>
+</div>
